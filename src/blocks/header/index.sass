@@ -1,0 +1,39 @@
+.header
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 30px
+    border-bottom: 1px solid #f1f1f1
+    .menu
+        display: flex
+        align-items: center
+        gap: 10px
+        text-decoration: none
+        color: black
+        .burger
+            position: relative
+            width: 20px
+            height: 15px
+            &::before, &::after
+                content: ""
+                position: absolute
+                width: 100%
+                height: 2px
+                background: black
+                left: 0
+            &::before
+                top: 0
+            &::after
+                bottom: 0
+            & > span 
+                position: absolute
+                width: 100%
+                height: 2px
+                background: black
+                left: 0
+                top: 50%
+                transform: translateY(-50%)
+        &-text
+            font-size: 14px
+    .logo
+        width: 40%
