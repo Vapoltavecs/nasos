@@ -1,0 +1,44 @@
+.modal-wrap
+    width: 100%
+    height: 100%
+    background: rgba(0, 0, 0, 0.7)
+    align-items: center
+    justify-content: center
+    position: fixed
+    top: 0
+    left: 0
+    display: none
+    &.active
+        display: flex
+    
+    .modal
+        padding: 20px
+        width: 90%
+        background: white
+        border-radius: 5px
+        & > form > div
+            margin-top: 10px
+        & > form > div > label
+            display: block
+        & > form > div > input
+            width: 100%
+            margin-top: 15px
+            padding: 5px
+            outline: none
+        & > form > div > textarea
+            width: 100%
+            margin-top: 10px
+            height: 100px
+            resize: none
+            outline: none
+            padding: 5px
+        & > form > button
+            padding: 20px
+            display: block
+            width: 100%
+            border: none
+            margin-top: 30px
+            cursor: pointer
+            background: #13aff0
+            color: white
+            font-weight: 500

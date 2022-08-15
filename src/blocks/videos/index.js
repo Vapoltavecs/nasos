@@ -1,3 +1,4 @@
-$(document).ready(function(){
-  $(".videos-swiper").owlCarousel();
+$('.videos-swiper').slick({
+  nextArrow: $(".videos-next"),
+  prevArrow: $(".videos-prev")
 });

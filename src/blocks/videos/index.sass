@@ -1,9 +1,37 @@
 .videos
     margin-top: 100px
-.swiper-videos-pagination
-    margin: 20px auto
-    display: flex
-    align-items: center
-    justify-content: center
-    & > span 
-        cursor: pointer
+    width:100%
+    .slider-wrapper
+        position: relative
+    
+    &__title
+        font-size: 2em
+        font-weight: 700
+        text-align: center
+    &__line
+        background: red
+        width: 2px
+        height: 50px
+        margin: 20px auto
+.prev, .next
+        position: absolute
+        top: 50%
+        text-align: center
+        font-size: 1.5em
+        
+        background: black
+        color: white
+        font-weight: 600
+        border-radius: 50%
+        width: 30px
+        height: 30px
+        transform: translateY(-50%)
+        cursor: pointer 
+        background: url("../images/arrow.png") center center
+        background-size: cover
+        background-color: white
+.next
+    right: 20px 
+.prev
+    left: 20px  
+    transform: rotate(-180deg) translateY(50%)

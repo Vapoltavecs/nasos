@@ -5,29 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Теплові насоси Romstal</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
     <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 <body>
-    <header class="pre-header">
+    <header class="pre-header wow animate__animated animate__fadeInDown">
     <a href="email">eco@romstal.ua</a>
     <a href="number">+38(050) 440-77-79</a>
 </header>
-    <header class="header">
+    <header class="header wow animate__animated animate__fadeInDown" data-wow-delay=".6s">
     <img src="./images/logo.png" alt="logo" class="logo">
     <a href="#" class="menu"><div class="burger"><span></span></div><span class="menu-text">Меню</span></a>
+    <div class="dropdown">
+        <ul>
+            <li><a href="#advantagers">Переваги</a></li>
+            <li><a href="#videos">Відео</a></li>
+            <li><a href="#complect">Порівняння джерел опалення</a></li>
+            <li><a href="#form">Підібрати тепловий насос</a></li>
+            <li><a href="#footer">Скачати PDF</a></li>
+        </ul>
+    </div>
 </header>
     <section class="main">
     <div class="banner-wrap">
-        <img src="../images/main-banner.png" alt="banner" class="banner">
+        <img src="../images/main-banner.png" alt="banner" class="banner wow animate__animated animate__fadeInRight">
     </div>
-    <h1 class="main__title">
+    <h1 class="main__title wow animate__animated animate__fadeInLeft">
         Теплові насоси Romstal Ecoheat
     </h1>
-    <button class="button">
+    <button class="button open-modal">
         Написати консультанту
     </button>
 </section>
@@ -44,25 +54,25 @@
         <path  d="M15.6,13.2c0-0.1,4.3,0,6.7,0.5c2.4,0.5,5,1.9,5,2c0,0.1-2.7-0.8-5.1-1.4	C19.9,13.7,15.7,13.3,15.6,13.2z"></path>
     </svg>
 </div>
-    <section class="form">
+    <section class="form" id="form">
     <h3 class="form__title">
         Заповніть форму нижче для розрахунку
     </h3>
     <form class="form">
-        <div class="form__item">
+        <div class="form__item wow animate__animated animate__fadeInUp" data-wow-delay=".2s">
             <div class="form__item-pretitle">Яка корисна площа будівлі? (м²)</div>
             <input type="number" class="form__item-input">
             <label class="form__item-label">Корисна площа - це опалювальна площа і її можна розрахувати
                 як Довжина х Ширину
             </label>
         </div>
-        <div class="form__item">
-            <div class="form__item-pretitle">Яка висота стелі? (метри)</div>
+        <div class="form__item wow animate__animated animate__fadeInUp" data-wow-delay=".4s">
+            <div class="form__item-pretitle ">Яка висота стелі? (метри)</div>
             <input type="number" class="form__item-input">
             <label class="form__item-label">Зазвичай 2.5-3.5 метра
             </label>
         </div>
-        <div class="options">
+        <div class="options wow animate__animated animate__fadeInUp" data-wow-delay=".6s">
             <div class="options__title">Яка ізоляція будівлі?</div>
             <div class="options__item">
                 <input type="radio" value="Без ізоляції" class="options__input" name="izolation">
@@ -96,34 +106,34 @@
         Замовити розрахунок
     </button>
 </section>
-    <section class="advantagers">
+    <section class="advantagers" id="advantagers">
     <h3 class="advantagers__title">
         Переваги використання теплових насосів:
     </h3>
     <div class="advantagers__cards">
-        <div class="card">
+        <div class="card wow animate__animated animate__fadeInLeft">
             <img src="./images/cards/1.png" alt="card" class="card__image">
             <h4 class="card__title">Значне зниження витрат</h4>
             <p class="card__description">на опалення та охолодження</p>
         </div>
-        <div class="card">
+        <div class="card wow animate__animated animate__fadeInRight">
             <img src="./images/cards/2.png" alt="card" class="card__image">
             <h4 class="card__title">Проста та безпечна експлуатація </h4>
             <p class="card__description">не вимагає підключення димоходу або газу, не є вибухонебезпечним</p>
         </div>
-        <div class="card">
+        <div class="card wow animate__animated animate__fadeInLeft">
             <img src="./images/cards/3.png" alt="card" class="card__image">
             <h4 class="card__title">
                 Компактне рішення </h4>
             <p class="card__description">опалення, охолодження та приготування гарячої води для побутового
                 використання за допомогою одного пристрою</p>
         </div>
-        <div class="card">
+        <div class="card  wow animate__animated animate__fadeInRight">
             <img src="./images/cards/4.png" alt="card" class="card__image">
             <h4 class="card__title">Захист довкілля</h4>
             <p class="card__description">Мінімальні викиди CO₂ при використанні відновлювальних джерел енергії</p>
         </div>
-        <div class="card">
+        <div class="card wow animate__animated animate__fadeInLeft">
             <img src="./images/cards/5.png" alt="card" class="card__image">
             <h4 class="card__title">Максимальний комфорт</h4>
             <p class="card__description">в порівнянні з твердопаливними котлами</p>
@@ -138,23 +148,23 @@
     <img src="./images/products/logo.jpg" alt="logo" class="products-logo">
     <div class="line"></div>
     <div class="cards">
-        <div class="card">
+        <div class="card wow animate__animated animate__fadeInRight">
             <img src="./images/products/1.jpg" alt="card-image" class="card-image">
             <h3 class="card-title">8 кВт </h3>
             <h4 class="card-subtitle">Рішення підходить для будинків
                 площею до 150 м²</h4>
         </div>
-        <div class="card">
+        <div class="card wow animate__animated animate__fadeInLeft">
             <img src="./images/products/2.jpg" alt="card-image" class="card-image">
             <h3 class="card-title">12 кВт</h3>
             <h4 class="card-subtitle">Рішення підходить для будинків площею до 190 м²</h4>
         </div>
-        <div class="card">
+        <div class="card wow animate__animated animate__fadeInRight">
             <img src="./images/products/3.jpg" alt="card-image" class="card-image">
             <h3 class="card-title">16,5 кВт</h3>
             <h4 class="card-subtitle">Рішення підходить для будинків площею до 270 м²</h4>
         </div>
-        <div class="card">
+        <div class="card wow animate__animated animate__fadeInLeft">
             <img src="./images/products/4.jpg" alt="card-image" class="card-image">
             <h3 class="card-title">30 кВт</h3>
             <h4 class="card-subtitle">Рішення підходить для будинків площею до 500 м²</h4>
@@ -174,7 +184,7 @@
         <path  d="M15.6,13.2c0-0.1,4.3,0,6.7,0.5c2.4,0.5,5,1.9,5,2c0,0.1-2.7-0.8-5.1-1.4	C19.9,13.7,15.7,13.3,15.6,13.2z"></path>
     </svg>
 </div>
-    <section class="analysis">
+    <section class="analysis wow animate__animated animate__fadeInUp">
     <h3 class="analysis-title">Порівняльний аналіз витрат на опалення</h3>
     <h4 class="analysis-subtitle">Тепловий насос "повітря-вода"/Газовий котел/Електричний котел</h4>
     <div class="bars">
@@ -198,7 +208,7 @@
         </div>
     </div>
 </section>
-    <section class="complect">
+    <section class="complect" id="complect">
     <h4 class="pretitle">
     <span class="line"></span><span class="text">Порівняльний аналіз
     Електричного котла/Газового котла/Теплового насоса
@@ -280,9 +290,11 @@
             необхідних для поглинання виробленого CO₂.</p>
     </div>
 </section>
-    <section class="videos">
-    <div class="videos-swiper swiper">
-        <div class="swiper-wrapper">
+    <section class="videos" id="videos">
+    <h3 class="videos__title">Наші відео</h3>
+    <div class="videos__line"></div>
+    <div class="slider-wrapper">
+        <div class="videos-swiper swiper">
             <div class="swiper-slide"><iframe width="100%" height="300px"
                     src="https://www.youtube.com/embed/YgCWUbkRmyU?list=TLGGyFQkj66kHj4xMjA4MjAyMg"
                     title="Тепловий насос повітря-вода Romstal Ecoheat by Midea" frameborder="0"
@@ -293,13 +305,103 @@
                     title="Тепловий насос Romstal ECOHEAT" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe></div>
-            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide"><iframe width="100%" height="300px" src="https://www.youtube.com/embed/zzDC5U182iw?list=TLGGb2oC14_crhUxNTA4MjAyMg" title="Тепловий насос Midea" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
         </div>
-        <div class="swiper-videos-pagination"></div>
-        <div class="swiper-button-prev"><</div>
-        <div class="swiper-button-next">></div>
+        <div class="prev videos-prev"></div>
+        <div class="next videos-next"></div>
     </div>
 </section>
+    <section class="portfolio">
+    <h3 class="portfolio-title">Наші об'єкти</h3>
+    <div class="portfolio-line"></div>
+    <div class="slider-wrapper">
+        <div class="portfolio-slider">
+            <div class="item">
+                <div class="item-image-wrap">
+                    <img src="./images/portfolio/1.jpg" alt="item" class="item-image">
+                </div>
+                <div class="item-title">
+                    Тепловий насос повітря-вода Ecoheat від Midea в будинку 180 м² в
+                    Вишеньках </div>
+                <p class="item-text">Завершили черговий об'єкт в Вишеньках. В
+                    будинку 180 м² з опаленням від електрокотла 12 кВт, прийняли рішення
+                    провести реконструкцію і встановити тепловий насос повітря-вода Ecoheat від
+                    Midea 12 квт;</p>
+                    
+            </div>
+            <div class="item">
+                <div class="item-image-wrap">
+                    <img src="./images/portfolio/2.jpg" alt="item" class="item-image">
+                </div>
+                <div class="item-title">
+                    Тепловий насос повітря-вода Ecoheat від Midea в будинку 180 м² в
+                    Вишеньках </div>
+                <p class="item-text">Завершили черговий об'єкт в Вишеньках. В
+                    будинку 180 м² з опаленням від електрокотла 12 кВт, прийняли рішення
+                    провести реконструкцію і встановити тепловий насос повітря-вода Ecoheat від
+                    Midea 12 квт;</p>
+            </div>
+            <div class="item">
+                <div class="item-image-wrap">
+                    <img src="./images/portfolio/3.jpg" alt="item" class="item-image">
+                </div>
+                <div class="item-title">
+                    Тепловий насос повітря-вода Ecoheat від Midea в будинку 180 м² в
+                    Вишеньках </div>
+                <p class="item-text">Завершили черговий об'єкт в Вишеньках. В
+                    будинку 180 м² з опаленням від електрокотла 12 кВт, прийняли рішення
+                    провести реконструкцію і встановити тепловий насос повітря-вода Ecoheat від
+                    Midea 12 квт;</p>
+            </div>
+        </div>
+        <div class="next portfolio-next"></div>
+        <div class="prev portfolio-prev"></div>
+    </div>
+</section>
+    <footer class="footer" id="footer">
+    <span class="footer-line"></span>
+    <h3 class="footer-title">Документи</h3>
+    <ul>
+        <li><a href="https://romstal.ua/teplovi-nasosy/files/Romstal_Ecoheat_by_Midea_presentation.pdf">Презентація теплових насосів Romstal Ecoheat by Midea</a></li>
+        <li><a href="https://romstal.ua/teplovi-nasosy/files/instrukcia_korystuvacha.pdf">Інструкція користувача</a></li>
+        <li><a href="https://romstal.ua/teplovi-nasosy/files/instrukcia_korystuvacha_z_montazhu.pdf">Інструкція щодо монтажу та експлуатації</a></li>
+        <li><a href="https://romstal.ua/teplovi-nasosy/files/posibnyk_korystuvacha.pdf">Посібник користувача</a></li>
+    </ul>
+    <div class="footer-end"></div>
+</footer>
+    <div class="modal-wrap">
+    <div class="modal">
+        <div class="modal-title">Зв'язатися з нами</div>
+        <form action="">
+            <div>
+                <label for="">Ім'я</label>
+                <input type="text" >
+            </div>
+            <div>
+                <label for="">Email-адреса</label>
+                <input type="text">
+            </div>
+            <div>
+                <label for="">Телефон</label>
+                <input type="text" type="number">
+            </div>
+            <div>
+                <label for="">Місто</label>
+                <input type="text">
+            </div>
+            <div>
+                <label for="">Опалювальна площа</label>
+                <input type="text">
+            </div>
+            <div>
+                <label for="">Повідомлення</label>
+                <textarea type="text"></textarea>
+            </div>
+            <button type="submit">Відправити повідомлення</button>
+        </form>
+    </div>
+</div>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js" integrity="sha512-Rd5Gf5A6chsunOJte+gKWyECMqkG8MgBYD1u80LOOJBfl6ka9CtatRrD4P0P5Q5V/z/ecvOCSYC8tLoWNrCpPg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./scripts/main.js"></script> 
 </html>

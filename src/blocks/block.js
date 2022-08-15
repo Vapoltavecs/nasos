@@ -1,1 +1,6 @@
 import "./videos"
+import "./portfolio"
+import "./header/index"
+import "./modal/index"
+import "./main/index"
+import "./impulse/index"
